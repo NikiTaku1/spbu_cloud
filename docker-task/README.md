@@ -18,10 +18,10 @@
     curl -X POST http://localhost:8080/items -H "Content-Type: application/json" -d '{"name":"test"}'
 
 ## Проверка сохранности данных
-    docker compose down       # без -v
+    docker compose down       # !без -v
     docker compose up -d
     curl http://localhost:8080/items   # данные на месте
 
 ## Остановка
     docker compose down       # данные сохраняются
-    docker compose down -v    # ВНИМАНИЕ: удаляет данные
+    docker compose down -v    # удаляет данные
