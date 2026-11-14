@@ -1,0 +1,51 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    restart: unless-stopped
+
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+    environment:
+      RABBITMQ_DEFAULT_USER: appuser
+      RABBITMQ_DEFAULT_PASS: apppass
+
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  producer:
+    build: .
+    container_name: producer
+    restart: unless-stopped
+
+    command: python producer.py
+
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  consumer:
+    build: .
+    container_name: consumer
+    restart: unless-stopped
+
+    command: python consumer.py
+
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+    volumes:
+      - ./logs:/app/logs
+
+volumes:
+  rabbitmq_data:

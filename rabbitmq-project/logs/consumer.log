@@ -1,0 +1,249 @@
+2026-11-14 16:21:35,805 [CONSUMER] INFO: Pika version 1.3.2 connecting to ('172.19.0.2', 5672)
+2026-11-14 16:21:35,805 [CONSUMER] INFO: Socket connected: <socket.socket fd=7, family=2, type=1, proto=6, laddr=('172.19.0.4', 36752), raddr=('172.19.0.2', 5672)>
+2026-11-14 16:21:35,806 [CONSUMER] INFO: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7c9ccecb5250>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7c9ccecb5250> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2026-11-14 16:21:35,810 [CONSUMER] INFO: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7c9ccecb5250> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-14 16:21:35,810 [CONSUMER] INFO: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7c9ccecb5250> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-14 16:21:35,810 [CONSUMER] INFO: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7c9ccecb5250> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-14 16:21:35,810 [CONSUMER] INFO: Connected to RabbitMQ
+2026-11-14 16:21:35,811 [CONSUMER] INFO: Created channel=1
+2026-11-14 16:21:35,824 [CONSUMER] INFO: Consumer started
+2026-11-14 16:21:35,824 [CONSUMER] INFO: Waiting for messages...
+2026-11-14 16:21:35,824 [CONSUMER] INFO: SUCCESS | 92 multiply 16 = 1472 | message_id=4eef2b05-4472-4b6a-a14b-ecd347a7c62a
+2026-11-14 16:21:40,684 [CONSUMER] INFO: SUCCESS | 48 divide 14 = 3.4285714285714284 | message_id=38210174-4f9e-4442-a7f7-a5c85cc0a024
+2026-11-14 16:21:45,680 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "5fa66a6f-2812-40dc-accc-879b34359f65", "operation": "divide", "a": 12, "b": 0}'
+2026-11-14 16:21:50,683 [CONSUMER] INFO: SUCCESS | 58 multiply 53 = 3074 | message_id=5e6e06bc-781a-43d9-af4a-ee0462cbdf6a
+2026-11-14 16:21:55,686 [CONSUMER] INFO: SUCCESS | 14 subtract 17 = -3 | message_id=0cec6aff-c698-4953-8451-a303ec324b11
+2026-11-14 16:22:00,687 [CONSUMER] INFO: SUCCESS | 9 add 30 = 39 | message_id=e45860dc-af1b-4855-8212-a035606e0391
+2026-11-14 16:22:05,686 [CONSUMER] INFO: SUCCESS | 91 divide 71 = 1.2816901408450705 | message_id=d915350f-901d-471d-a4b3-4625947978a4
+2026-11-14 16:22:10,686 [CONSUMER] INFO: SUCCESS | 49 add 44 = 93 | message_id=25817250-b65a-4775-94ab-62f4f9465bdb
+2026-11-14 16:22:15,687 [CONSUMER] INFO: SUCCESS | 91 multiply 47 = 4277 | message_id=ab110b2b-ae58-46ee-b5d7-dab17f812686
+2026-11-14 16:22:20,687 [CONSUMER] INFO: SUCCESS | 3 add 10 = 13 | message_id=0253f10e-8293-4c83-b860-e8dbb0431a6d
+2026-11-14 16:22:25,688 [CONSUMER] INFO: SUCCESS | 78 divide 100 = 0.78 | message_id=a740a72c-35b6-43d8-be7b-d4f005c8adea
+2026-11-14 16:22:30,689 [CONSUMER] INFO: SUCCESS | 75 multiply 100 = 7500 | message_id=7c6e5ada-b006-4bcf-9b06-823e8f4e344b
+2026-11-14 16:22:35,691 [CONSUMER] INFO: SUCCESS | 49 add 4 = 53 | message_id=5654fdd6-b626-419d-9483-7ff16f439104
+2026-11-14 16:22:40,692 [CONSUMER] INFO: SUCCESS | 77 subtract 35 = 42 | message_id=18edeadc-8d6f-427f-89bf-b0ea2b0c36e1
+2026-11-14 16:22:45,692 [CONSUMER] INFO: SUCCESS | 8 multiply 17 = 136 | message_id=2a40c9c5-c832-4f2e-9c3f-984c939465ea
+2026-11-14 16:22:50,694 [CONSUMER] INFO: SUCCESS | 51 multiply 22 = 1122 | message_id=fc141188-f687-41a7-b5e3-3036e10da4ed
+2026-11-14 16:22:55,696 [CONSUMER] INFO: SUCCESS | 91 divide 78 = 1.1666666666666667 | message_id=59045fab-e18f-4afe-b7ce-2c5bc0977735
+2026-11-14 16:23:00,697 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "8bb739af-6949-4d16-ae38-514d395fec84", "operation": "divide", "a": 30, "b": 0}'
+2026-11-14 16:23:05,697 [CONSUMER] INFO: SUCCESS | 95 subtract 59 = 36 | message_id=f51c19ac-6da0-4959-8d94-e2ce40420ab7
+2026-11-14 16:23:10,698 [CONSUMER] INFO: SUCCESS | 2 add 68 = 70 | message_id=f01f341a-c80e-4af2-95cb-d4cab40feacf
+2026-11-14 16:23:15,700 [CONSUMER] INFO: SUCCESS | 62 subtract 71 = -9 | message_id=27c0378b-7c9b-4b93-b476-79f86f002cd9
+2026-11-14 16:23:20,702 [CONSUMER] INFO: SUCCESS | 46 add 80 = 126 | message_id=7fa0b025-cdf9-4f3c-a073-c432014c4a4a
+2026-11-14 16:23:25,703 [CONSUMER] INFO: SUCCESS | 62 add 38 = 100 | message_id=ad9591ed-4970-4364-9526-41b0af4a5d44
+2026-11-14 16:23:30,703 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "440c5bb9-68bb-4463-8dc9-6ba8b7dec5e9", "operation": "divide", "a": 95, "b": 0}'
+2026-11-14 16:23:35,705 [CONSUMER] INFO: SUCCESS | 13 divide 28 = 0.4642857142857143 | message_id=85428b82-5ef7-4b92-aaa6-38fd1888c7ad
+2026-11-14 16:23:40,706 [CONSUMER] INFO: SUCCESS | 14 divide 16 = 0.875 | message_id=2f72c962-e0b9-4aa7-a73f-5b33fd807cda
+2026-11-14 16:23:45,707 [CONSUMER] INFO: SUCCESS | 48 subtract 34 = 14 | message_id=3ef1b9f2-4eb3-4d96-974d-45a5b37fbc9a
+2026-11-14 16:23:50,709 [CONSUMER] INFO: SUCCESS | 57 subtract 100 = -43 | message_id=d4ac959c-20cb-4834-b668-431af08deb63
+2026-11-14 16:23:55,709 [CONSUMER] INFO: SUCCESS | 7 subtract 90 = -83 | message_id=566a3fe8-94e1-4420-93b6-c9a995d77ea3
+2026-11-14 16:24:00,711 [CONSUMER] INFO: SUCCESS | 79 multiply 62 = 4898 | message_id=b1c8da25-845f-4d9f-9c6b-76ab33fea956
+2026-11-14 16:24:05,712 [CONSUMER] INFO: SUCCESS | 5 add 87 = 92 | message_id=88eed6c4-8f18-4f3b-a70f-31d6b47dcfc7
+2026-11-14 16:24:10,714 [CONSUMER] INFO: SUCCESS | 86 divide 68 = 1.2647058823529411 | message_id=3e2a3047-2ddb-4f38-b80b-149dd3c4ac36
+2026-11-14 16:24:15,715 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "dba2bb76-5007-4688-b559-88d9a81a85d4", "operation": "divide", "a": 52, "b": 0}'
+2026-11-14 16:24:20,717 [CONSUMER] INFO: SUCCESS | 47 add 56 = 103 | message_id=42a166ed-a14a-45bc-b02a-3b38839866af
+2026-11-14 16:24:25,718 [CONSUMER] INFO: SUCCESS | 18 subtract 21 = -3 | message_id=e74070ff-fca8-426a-8e2d-2c8bc4bddf0f
+2026-11-14 16:24:30,720 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "5fa86bad-a614-4cf2-a624-af502396c580", "operation": "divide", "a": 76, "b": 0}'
+2026-11-14 16:24:35,721 [CONSUMER] INFO: SUCCESS | 99 multiply 28 = 2772 | message_id=eba926e4-e5eb-470e-8c08-8e3c334e0dad
+2026-11-14 16:24:40,723 [CONSUMER] INFO: SUCCESS | 96 add 20 = 116 | message_id=c3c3f8ce-6a81-4bf9-bd73-13a480dead6e
+2026-11-14 16:24:45,723 [CONSUMER] INFO: SUCCESS | 77 add 70 = 147 | message_id=f5c49cac-17bf-4394-be3e-5a3a263cef0a
+2026-11-14 16:24:50,725 [CONSUMER] INFO: SUCCESS | 84 add 95 = 179 | message_id=9ee0816b-e43f-4cbb-93f0-c5f2aba4b215
+2026-11-14 16:24:55,726 [CONSUMER] INFO: SUCCESS | 36 subtract 1 = 35 | message_id=cb3cfe19-56cb-4c39-9d7b-d2f9cacda3fa
+2026-11-14 16:25:00,727 [CONSUMER] INFO: SUCCESS | 61 multiply 26 = 1586 | message_id=c63877de-9339-41f3-9a3b-09073fa64ff5
+2026-11-14 16:25:05,728 [CONSUMER] INFO: SUCCESS | 52 divide 10 = 5.2 | message_id=9721614e-936b-408a-b4a2-9833c6bbbc0d
+2026-11-14 16:25:10,729 [CONSUMER] INFO: SUCCESS | 99 add 39 = 138 | message_id=5c8d8575-89b1-4e3f-8d86-e28431e3209b
+2026-11-14 16:25:15,729 [CONSUMER] INFO: SUCCESS | 91 multiply 96 = 8736 | message_id=24bfd588-9628-4d92-b4aa-e09cc3803965
+2026-11-14 16:25:20,730 [CONSUMER] INFO: SUCCESS | 37 divide 12 = 3.0833333333333335 | message_id=63ec7ef4-3d68-462e-9dff-5879bd335115
+2026-11-14 16:25:25,733 [CONSUMER] INFO: SUCCESS | 65 add 3 = 68 | message_id=5e1c6ab1-5197-4c13-ac4f-9efb25a70a99
+2026-11-14 16:25:30,734 [CONSUMER] INFO: SUCCESS | 28 add 39 = 67 | message_id=6e561586-8b66-4336-a7af-7d24db2f49ee
+2026-11-14 16:25:35,735 [CONSUMER] INFO: SUCCESS | 63 subtract 2 = 61 | message_id=c87198b6-02f1-4917-9017-a0cd1d00525d
+2026-11-14 16:25:40,735 [CONSUMER] INFO: SUCCESS | 89 subtract 90 = -1 | message_id=9d9f2ea8-02bd-4dd9-aff0-4b76fcc2900f
+2026-11-14 16:25:45,736 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "dbf3a152-1d09-41d5-9a65-1f39bed082b8", "operation": "divide", "a": 54, "b": 0}'
+2026-11-14 16:25:50,739 [CONSUMER] INFO: SUCCESS | 21 multiply 92 = 1932 | message_id=19c5e669-aab1-4a51-934a-2304161f0842
+2026-11-14 16:25:55,739 [CONSUMER] INFO: SUCCESS | 65 divide 85 = 0.7647058823529411 | message_id=bc58351d-6fa7-4232-bd5a-6d988686aeb7
+2026-11-14 16:26:00,740 [CONSUMER] INFO: SUCCESS | 6 subtract 46 = -40 | message_id=89e41a61-3814-4ab4-a12a-a13d580c8026
+2026-11-14 16:26:05,742 [CONSUMER] INFO: SUCCESS | 46 subtract 40 = 6 | message_id=14b6dd93-0fb0-4e15-b6d8-861ddb9068d7
+2026-11-14 16:26:10,743 [CONSUMER] INFO: SUCCESS | 39 subtract 43 = -4 | message_id=ac404d79-b69b-4fc9-aaa4-08d33339ab0b
+2026-11-14 16:26:15,744 [CONSUMER] INFO: SUCCESS | 80 add 6 = 86 | message_id=dcb52bfa-7e4c-473f-a379-c89a350399d0
+2026-11-14 16:26:20,745 [CONSUMER] INFO: SUCCESS | 7 subtract 38 = -31 | message_id=5ae2616c-4120-4dd0-a330-8f3e3b32d59a
+2026-11-14 16:26:25,747 [CONSUMER] INFO: SUCCESS | 78 add 40 = 118 | message_id=c7c044ec-330a-45ae-b6a6-617a170a4039
+2026-11-14 16:26:30,747 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "e9416ab8-0430-4a86-8e51-bca9e086099e", "operation": "divide", "a": 53, "b": 0}'
+2026-11-14 16:26:35,750 [CONSUMER] INFO: SUCCESS | 92 divide 26 = 3.5384615384615383 | message_id=0746d2be-33c9-4517-a049-d270f6091eeb
+2026-11-14 16:26:40,751 [CONSUMER] INFO: SUCCESS | 74 divide 1 = 74.0 | message_id=52285a98-bc0c-4f65-ac31-b1e749fa2869
+2026-11-14 16:26:45,752 [CONSUMER] INFO: SUCCESS | 25 multiply 25 = 625 | message_id=fcc71af2-197a-4b78-8027-d52e005677be
+2026-11-14 16:26:50,752 [CONSUMER] INFO: SUCCESS | 77 add 56 = 133 | message_id=d08d492c-b20c-49b9-9bae-493af360f4e7
+2026-11-14 16:26:55,754 [CONSUMER] INFO: SUCCESS | 17 add 1 = 18 | message_id=a49b90b4-2490-4e7b-8e42-1a7ae9482f9d
+2026-11-14 16:27:00,756 [CONSUMER] INFO: SUCCESS | 28 add 65 = 93 | message_id=7754f1b3-9221-447c-9cc3-e68ae0cfc8b5
+2026-11-14 16:27:05,757 [CONSUMER] INFO: SUCCESS | 7 add 85 = 92 | message_id=9236bec9-2846-458d-a62d-aca0fc1bad36
+2026-11-14 16:27:10,757 [CONSUMER] INFO: SUCCESS | 15 add 18 = 33 | message_id=53f39ca7-f87a-449d-bba4-257cfc292822
+2026-11-14 16:27:15,758 [CONSUMER] INFO: SUCCESS | 64 add 51 = 115 | message_id=aee5aac8-2940-4bd4-bdc3-0c75da139705
+2026-11-14 16:27:20,759 [CONSUMER] INFO: SUCCESS | 14 multiply 54 = 756 | message_id=f1fa3820-01ba-459d-9a09-51450ecc4fb6
+2026-11-14 16:27:25,760 [CONSUMER] INFO: SUCCESS | 80 add 83 = 163 | message_id=0c38af44-4e96-4afa-883f-95a382cf4982
+2026-11-14 16:27:30,762 [CONSUMER] INFO: SUCCESS | 95 add 19 = 114 | message_id=2aa9c098-5674-4e0b-a407-b737c405616d
+2026-11-14 16:27:35,764 [CONSUMER] INFO: SUCCESS | 91 subtract 49 = 42 | message_id=4770ff19-0b1c-40cb-8cd4-298af719f3e2
+2026-11-14 16:27:40,765 [CONSUMER] INFO: SUCCESS | 38 divide 100 = 0.38 | message_id=9c3613d9-1996-4fb3-bc99-01efd620ef2b
+2026-11-14 16:27:45,765 [CONSUMER] INFO: SUCCESS | 84 add 55 = 139 | message_id=9884d385-dd3a-4123-98b0-c123f0d11f8d
+2026-11-14 16:27:50,766 [CONSUMER] INFO: SUCCESS | 33 multiply 20 = 660 | message_id=f7903905-8b3e-4603-baf5-4b5c1daa5846
+2026-11-14 16:27:55,767 [CONSUMER] INFO: SUCCESS | 42 multiply 56 = 2352 | message_id=a6d9ead0-0251-4ea9-ade9-265cddda1551
+2026-11-14 16:28:00,768 [CONSUMER] INFO: SUCCESS | 64 add 43 = 107 | message_id=316b614f-5444-4acc-a334-1da64dff73f3
+2026-11-14 16:28:05,769 [CONSUMER] INFO: SUCCESS | 88 subtract 20 = 68 | message_id=a4744196-0b3d-4adb-85b7-09b4feb57c2d
+2026-11-14 16:28:10,771 [CONSUMER] INFO: SUCCESS | 61 add 99 = 160 | message_id=9855df22-8218-4834-90d2-7eb2c4a33346
+2026-11-14 16:28:15,772 [CONSUMER] INFO: SUCCESS | 52 add 31 = 83 | message_id=200a00e8-dbad-43e1-a2dc-9390bd549e52
+2026-11-14 16:28:20,772 [CONSUMER] INFO: SUCCESS | 46 multiply 63 = 2898 | message_id=abf36a1e-c1e2-404f-b9ed-5c567e33fad0
+2026-11-14 16:28:25,773 [CONSUMER] INFO: SUCCESS | 69 divide 24 = 2.875 | message_id=a4c22241-8039-4539-8ee1-297911db3c17
+2026-11-14 16:28:30,775 [CONSUMER] INFO: SUCCESS | 15 add 76 = 91 | message_id=a598105f-8ee5-4e84-a5f6-0b9f788aeab7
+2026-11-14 16:28:35,776 [CONSUMER] INFO: SUCCESS | 74 divide 75 = 0.9866666666666667 | message_id=9b3c9662-e73d-4bcf-a87e-a238d573c72f
+2026-11-14 16:28:40,776 [CONSUMER] INFO: SUCCESS | 64 subtract 42 = 22 | message_id=b8706e74-8c9e-4131-83d3-84e89efce878
+2026-11-14 16:28:45,778 [CONSUMER] INFO: SUCCESS | 2 subtract 33 = -31 | message_id=ecf83b76-9432-474e-8df6-ba2be9d99780
+2026-11-14 16:28:50,780 [CONSUMER] INFO: SUCCESS | 63 subtract 16 = 47 | message_id=b55cf600-0f53-4d5c-85b4-034ac5a38e51
+2026-11-14 16:28:55,781 [CONSUMER] INFO: SUCCESS | 75 subtract 6 = 69 | message_id=41460cd3-0b94-4413-878e-bf3ca1fe26f8
+2026-11-14 16:29:00,783 [CONSUMER] INFO: SUCCESS | 85 add 50 = 135 | message_id=95f72335-4b31-430e-af82-740b872695ea
+2026-11-14 16:29:05,784 [CONSUMER] INFO: SUCCESS | 24 subtract 55 = -31 | message_id=ba668812-baca-43e1-9889-024d938c436e
+2026-11-14 16:29:10,786 [CONSUMER] INFO: SUCCESS | 47 subtract 84 = -37 | message_id=1c320458-34ac-41de-90b0-af499683ea98
+2026-11-14 16:29:15,787 [CONSUMER] INFO: SUCCESS | 97 subtract 59 = 38 | message_id=cf01ad25-d5ef-4630-afa2-cfb11a47fdb4
+2026-11-14 16:29:20,788 [CONSUMER] INFO: SUCCESS | 13 divide 91 = 0.14285714285714285 | message_id=04269986-1306-4623-a031-905092306d25
+2026-11-14 16:29:25,790 [CONSUMER] INFO: SUCCESS | 46 multiply 60 = 2760 | message_id=e4f10d8b-681e-4580-ba80-9c19e044614a
+2026-11-14 16:29:30,791 [CONSUMER] INFO: SUCCESS | 98 subtract 86 = 12 | message_id=2a20539e-022c-4689-a6da-cf5429c7288f
+2026-11-14 16:29:35,793 [CONSUMER] INFO: SUCCESS | 44 subtract 5 = 39 | message_id=467e01da-494f-4ef7-82d6-3d8215fa589b
+2026-11-14 16:29:40,794 [CONSUMER] INFO: SUCCESS | 72 divide 45 = 1.6 | message_id=497f2c2e-4e05-4602-be44-57692040a088
+2026-11-14 16:29:45,796 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "56e4e597-3eb0-4ce2-b6ad-1b4c44d58fe0", "operation": "divide", "a": 42, "b": 0}'
+2026-11-14 16:29:50,797 [CONSUMER] INFO: SUCCESS | 60 multiply 37 = 2220 | message_id=f67d072c-4206-46a0-9d46-57ea8e3f7dd8
+2026-11-14 16:29:55,799 [CONSUMER] INFO: SUCCESS | 60 add 75 = 135 | message_id=a81ca1fe-3e85-4337-afb4-067a01ac7c01
+2026-11-14 16:30:00,800 [CONSUMER] INFO: SUCCESS | 38 add 39 = 77 | message_id=ebcfa132-c780-4aac-ba6e-be2ce4d8364c
+2026-11-14 16:30:05,802 [CONSUMER] INFO: SUCCESS | 72 subtract 74 = -2 | message_id=a25e3b47-19f1-4346-9a0c-5559d68c8ea9
+2026-11-14 16:30:10,803 [CONSUMER] INFO: SUCCESS | 49 multiply 93 = 4557 | message_id=c6e218b9-31c8-4114-9920-77b44c294fb3
+2026-11-14 16:30:15,805 [CONSUMER] INFO: SUCCESS | 66 subtract 88 = -22 | message_id=f23297d9-1229-457c-905f-9a100a2605f8
+2026-11-14 16:30:20,805 [CONSUMER] INFO: SUCCESS | 18 add 82 = 100 | message_id=eb3d12c9-89d6-4403-9bbb-e1a4258776c3
+2026-11-14 16:30:25,807 [CONSUMER] INFO: SUCCESS | 62 divide 35 = 1.7714285714285714 | message_id=e5dad12b-e64d-40a0-9c73-f1575b32f97e
+2026-11-14 16:30:30,807 [CONSUMER] INFO: SUCCESS | 42 multiply 47 = 1974 | message_id=bf4db2f5-bf4e-426f-8bed-fc684afb3128
+2026-11-14 16:30:35,808 [CONSUMER] INFO: SUCCESS | 63 subtract 93 = -30 | message_id=9e53dfe7-6b8d-44a2-a48b-1f2186100a3e
+2026-11-14 16:30:40,810 [CONSUMER] INFO: SUCCESS | 96 divide 51 = 1.8823529411764706 | message_id=ae939397-0153-4ad1-b770-f3e834b1ab39
+2026-11-14 16:30:45,810 [CONSUMER] INFO: SUCCESS | 42 add 84 = 126 | message_id=d47c1fd2-fa81-4470-b4db-66ecd648c01b
+2026-11-14 16:30:50,812 [CONSUMER] INFO: SUCCESS | 86 multiply 82 = 7052 | message_id=466707e2-9f0e-4382-a2a9-42c1f700fc55
+2026-11-14 16:30:55,814 [CONSUMER] INFO: SUCCESS | 42 divide 78 = 0.5384615384615384 | message_id=c6eb4552-36e9-45c8-9a9f-a637a53eda18
+2026-11-14 16:31:49,303 [CONSUMER] INFO: Pika version 1.3.2 connecting to ('172.19.0.2', 5672)
+2026-11-14 16:31:49,303 [CONSUMER] INFO: Socket connected: <socket.socket fd=7, family=2, type=1, proto=6, laddr=('172.19.0.4', 55868), raddr=('172.19.0.2', 5672)>
+2026-11-14 16:31:49,304 [CONSUMER] INFO: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7662861e13a0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7662861e13a0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2026-11-14 16:31:49,309 [CONSUMER] INFO: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7662861e13a0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-14 16:31:49,309 [CONSUMER] INFO: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7662861e13a0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-14 16:31:49,309 [CONSUMER] INFO: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7662861e13a0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-14 16:31:49,309 [CONSUMER] INFO: Connected to RabbitMQ
+2026-11-14 16:31:49,310 [CONSUMER] INFO: Created channel=1
+2026-11-14 16:31:49,320 [CONSUMER] INFO: Consumer started
+2026-11-14 16:31:49,320 [CONSUMER] INFO: Waiting for messages...
+2026-11-14 16:31:49,320 [CONSUMER] INFO: SUCCESS | 92 subtract 90 = 2 | message_id=8154494c-28fa-4828-b458-9bbb5b531913
+2026-11-14 16:31:54,208 [CONSUMER] INFO: SUCCESS | 15 divide 59 = 0.2542372881355932 | message_id=276af449-c623-4b02-92fb-e1d31f53f074
+2026-11-14 16:31:59,210 [CONSUMER] INFO: SUCCESS | 53 multiply 77 = 4081 | message_id=348034cb-407f-4f3b-b487-5786b6469f14
+2026-11-14 16:32:04,207 [CONSUMER] INFO: SUCCESS | 72 add 43 = 115 | message_id=19e2c304-e37d-417d-b8b6-fc4563a1820a
+2026-11-14 16:32:09,206 [CONSUMER] INFO: SUCCESS | 85 divide 11 = 7.7272727272727275 | message_id=cf756d49-d368-478e-8f2f-0e0af61536aa
+2026-11-14 16:32:14,208 [CONSUMER] INFO: SUCCESS | 51 add 79 = 130 | message_id=7684e792-988a-4c92-87de-3b8f18032c54
+2026-11-14 16:32:19,209 [CONSUMER] INFO: SUCCESS | 81 add 80 = 161 | message_id=945f7314-cea6-41be-a4cc-ed4e54ae2876
+2026-11-14 16:32:24,209 [CONSUMER] INFO: SUCCESS | 18 divide 20 = 0.9 | message_id=f2315bd3-1f6d-41d0-9fd8-7168f5cc96d1
+2026-11-14 16:32:29,211 [CONSUMER] INFO: SUCCESS | 92 subtract 35 = 57 | message_id=8fb66083-9ed3-4278-a96c-bbc2ada3dc92
+2026-11-14 16:32:34,211 [CONSUMER] INFO: SUCCESS | 18 subtract 62 = -44 | message_id=e101fed1-26b6-429a-9b54-30d28fe9986d
+2026-11-14 16:32:39,214 [CONSUMER] INFO: SUCCESS | 28 divide 90 = 0.3111111111111111 | message_id=9cdcfa13-ab83-4934-88bb-6e6d322c9f35
+2026-11-14 16:32:44,214 [CONSUMER] INFO: SUCCESS | 78 subtract 88 = -10 | message_id=20e3681b-705b-4f71-8926-99b13bc06f66
+2026-11-14 16:32:49,216 [CONSUMER] INFO: SUCCESS | 75 multiply 3 = 225 | message_id=b20a09dd-2fe0-4ebd-977b-1e5cd498de1a
+2026-11-14 16:32:54,218 [CONSUMER] INFO: SUCCESS | 65 divide 20 = 3.25 | message_id=efbddbd4-347e-4e92-a5b5-5b49e9472a1f
+2026-11-14 16:32:59,219 [CONSUMER] INFO: SUCCESS | 30 subtract 13 = 17 | message_id=f6721a05-6df2-4ab0-a406-9b33aa563137
+2026-11-14 16:33:04,221 [CONSUMER] INFO: SUCCESS | 86 multiply 71 = 6106 | message_id=61288529-ce28-4c7d-ac41-a90389aabfd7
+2026-11-14 16:33:09,222 [CONSUMER] INFO: SUCCESS | 16 divide 73 = 0.2191780821917808 | message_id=1f3ccd3b-f77d-4d05-97be-d17dd50515e8
+2026-11-14 16:33:14,223 [CONSUMER] INFO: SUCCESS | 63 subtract 88 = -25 | message_id=eb405e1a-5d57-41bb-832f-d2b599b31534
+2026-11-14 16:33:19,225 [CONSUMER] INFO: SUCCESS | 29 multiply 72 = 2088 | message_id=ff7e775f-1b9a-4ca4-8caf-699719682909
+2026-11-14 16:33:24,226 [CONSUMER] INFO: SUCCESS | 64 subtract 73 = -9 | message_id=aef5dad4-ca77-4978-937b-09ba80b05183
+2026-11-14 16:33:29,227 [CONSUMER] INFO: SUCCESS | 67 multiply 67 = 4489 | message_id=af7490fd-86da-4886-b55b-ae93f2c1f429
+2026-11-14 16:33:34,229 [CONSUMER] INFO: SUCCESS | 85 subtract 72 = 13 | message_id=bc3bb3c7-cc2f-485c-811d-7f538be48571
+2026-11-14 16:33:39,230 [CONSUMER] INFO: SUCCESS | 19 subtract 63 = -44 | message_id=b42f5066-acf6-42b1-9644-40d9b2a997cb
+2026-11-14 16:33:44,230 [CONSUMER] INFO: SUCCESS | 89 add 29 = 118 | message_id=066c7298-1217-47a4-811c-4b8095689ec8
+2026-11-14 16:33:49,232 [CONSUMER] INFO: SUCCESS | 96 multiply 23 = 2208 | message_id=9cf7a050-f2d6-422e-a60f-a1931f767995
+2026-11-14 16:33:54,234 [CONSUMER] INFO: SUCCESS | 97 subtract 32 = 65 | message_id=8f0e545b-f6b8-4f80-a77f-292223f10f9b
+2026-11-14 16:33:59,235 [CONSUMER] INFO: SUCCESS | 74 subtract 33 = 41 | message_id=b3ced13b-5f0b-409f-a195-12a34d60f26f
+2026-11-14 16:34:04,237 [CONSUMER] INFO: SUCCESS | 83 subtract 37 = 46 | message_id=8fca99e2-f1ff-4361-9bbe-d43071e8c412
+2026-11-14 16:34:09,239 [CONSUMER] INFO: SUCCESS | 52 multiply 27 = 1404 | message_id=54971d33-e7a0-40bf-bcdb-92b03b9bdc6d
+2026-11-14 16:34:14,240 [CONSUMER] INFO: SUCCESS | 76 subtract 30 = 46 | message_id=a1395b55-13d6-4c6d-9b42-964cc6e8bb04
+2026-11-14 16:34:19,241 [CONSUMER] INFO: SUCCESS | 42 add 15 = 57 | message_id=285ff647-8bd6-40ed-8081-9fd105912ed1
+2026-11-14 16:34:24,243 [CONSUMER] INFO: SUCCESS | 62 subtract 62 = 0 | message_id=7e66f23a-7c40-4bef-8477-05118f76d7da
+2026-11-14 16:34:29,245 [CONSUMER] INFO: SUCCESS | 46 add 2 = 48 | message_id=36d87b18-77ce-4ffb-bd74-44405bdd0958
+2026-11-14 16:34:34,245 [CONSUMER] INFO: SUCCESS | 82 subtract 72 = 10 | message_id=4b668ae6-a7cf-4225-88ec-2305aebe3da1
+2026-11-14 16:34:39,247 [CONSUMER] INFO: SUCCESS | 92 multiply 65 = 5980 | message_id=d57362e1-61ef-4f85-9d3a-a01f75780684
+2026-11-14 16:34:44,249 [CONSUMER] INFO: SUCCESS | 69 subtract 79 = -10 | message_id=1a3533d5-5b99-4b7c-87b9-8db93458f601
+2026-11-14 16:34:49,250 [CONSUMER] INFO: SUCCESS | 49 divide 64 = 0.765625 | message_id=5039f4e3-6f91-4b44-bd96-ac5931b4d652
+2026-11-14 16:34:54,252 [CONSUMER] INFO: SUCCESS | 81 multiply 89 = 7209 | message_id=df61d3d5-f0cd-44b9-8659-2cfa3b33a051
+2026-11-14 16:34:59,253 [CONSUMER] INFO: SUCCESS | 30 multiply 39 = 1170 | message_id=07be0a1e-b176-4b68-a5cd-36b5ac7e5464
+2026-11-14 16:35:04,255 [CONSUMER] INFO: SUCCESS | 1 multiply 13 = 13 | message_id=8c3dca4d-5a01-4fbf-a0f7-0d45ea44b5d8
+2026-11-14 16:35:09,257 [CONSUMER] INFO: SUCCESS | 98 add 51 = 149 | message_id=42f6a449-d8a9-4d44-aa35-8828fcadda9a
+2026-11-14 16:35:14,257 [CONSUMER] INFO: SUCCESS | 36 multiply 20 = 720 | message_id=bd9509e9-b9cf-4b6b-8471-53807c937203
+2026-11-14 16:35:19,258 [CONSUMER] INFO: SUCCESS | 66 add 12 = 78 | message_id=6fd24af7-47dd-46e6-ba67-6e23252b4145
+2026-11-14 16:35:24,259 [CONSUMER] INFO: SUCCESS | 96 multiply 74 = 7104 | message_id=6afa6a15-fa5d-4d3c-aa40-8989276cd0da
+2026-11-14 16:35:29,261 [CONSUMER] INFO: SUCCESS | 80 add 73 = 153 | message_id=917a0290-983c-4327-bdb9-a723a4f25f8a
+2026-11-14 16:35:34,263 [CONSUMER] INFO: SUCCESS | 74 add 96 = 170 | message_id=98c85f41-1c01-4b80-8c78-a8f3793e6596
+2026-11-14 16:35:39,263 [CONSUMER] INFO: SUCCESS | 62 multiply 84 = 5208 | message_id=cb6bb38b-946a-45de-84b1-440c546737f1
+2026-11-14 16:35:44,264 [CONSUMER] INFO: SUCCESS | 77 multiply 98 = 7546 | message_id=decf85b7-d272-4bfc-bb96-40ed8e2901b4
+2026-11-14 16:35:49,265 [CONSUMER] INFO: SUCCESS | 85 add 21 = 106 | message_id=bb43f670-1b17-425d-8896-2e2c5dd1f26c
+2026-11-14 16:35:54,266 [CONSUMER] INFO: SUCCESS | 6 divide 69 = 0.08695652173913043 | message_id=9824392d-633c-45f8-8806-8782d5bbe039
+2026-11-14 16:35:59,267 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "93de510f-09ec-4112-960f-04626b24d678", "operation": "divide", "a": 36, "b": 0}'
+2026-11-14 16:36:04,268 [CONSUMER] INFO: SUCCESS | 1 add 54 = 55 | message_id=b4e235f4-2f25-4e8e-9605-b99172e4630a
+2026-11-14 16:36:09,270 [CONSUMER] INFO: SUCCESS | 52 multiply 17 = 884 | message_id=09f4aa33-9f86-46aa-87f0-89111a7a1b2b
+2026-11-14 16:36:14,270 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "7c54e71f-65f5-46e7-95ba-eb74cb9f0357", "operation": "divide", "a": 46, "b": 0}'
+2026-11-14 16:36:19,270 [CONSUMER] INFO: SUCCESS | 15 subtract 91 = -76 | message_id=b74613cd-af83-45ef-a307-73fe7418bd73
+2026-11-14 16:36:24,271 [CONSUMER] INFO: SUCCESS | 12 divide 87 = 0.13793103448275862 | message_id=658eba9d-b67e-440b-91c7-5f0b3d113527
+2026-11-14 16:36:29,273 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "26b788d8-5e5a-42b0-942a-d5a85a703cbb", "operation": "divide", "a": 48, "b": 0}'
+2026-11-14 16:36:34,274 [CONSUMER] INFO: SUCCESS | 84 divide 72 = 1.1666666666666667 | message_id=e88e141d-95b9-4926-80f2-c33502541d16
+2026-11-14 16:36:39,275 [CONSUMER] INFO: SUCCESS | 29 add 42 = 71 | message_id=dbf5b33f-1ec6-465d-ac22-1afbdf8beca1
+2026-11-14 16:36:44,277 [CONSUMER] INFO: SUCCESS | 44 multiply 1 = 44 | message_id=8052e14c-b872-4bc2-8d6f-52c41f0424de
+2026-11-14 16:36:49,278 [CONSUMER] INFO: SUCCESS | 52 divide 87 = 0.5977011494252874 | message_id=8eda3090-c92b-4615-bb3c-4dd14eddc472
+2026-11-14 16:36:54,280 [CONSUMER] INFO: SUCCESS | 99 add 21 = 120 | message_id=80936134-7ff6-4129-a2ff-bc7492a72aff
+2026-11-14 16:37:26,441 [CONSUMER] INFO: Pika version 1.3.2 connecting to ('172.19.0.2', 5672)
+2026-11-14 16:37:26,441 [CONSUMER] INFO: Socket connected: <socket.socket fd=7, family=2, type=1, proto=6, laddr=('172.19.0.4', 35452), raddr=('172.19.0.2', 5672)>
+2026-11-14 16:37:26,442 [CONSUMER] INFO: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7cda6f5413a0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7cda6f5413a0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2026-11-14 16:37:26,447 [CONSUMER] INFO: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7cda6f5413a0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-14 16:37:26,447 [CONSUMER] INFO: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7cda6f5413a0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-14 16:37:26,447 [CONSUMER] INFO: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7cda6f5413a0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-14 16:37:26,447 [CONSUMER] INFO: Connected to RabbitMQ
+2026-11-14 16:37:26,447 [CONSUMER] INFO: Created channel=1
+2026-11-14 16:37:26,458 [CONSUMER] INFO: Consumer started
+2026-11-14 16:37:26,458 [CONSUMER] INFO: Waiting for messages...
+2026-11-14 16:37:26,459 [CONSUMER] INFO: SUCCESS | 84 multiply 30 = 2520 | message_id=c4885a44-398d-42b6-8928-a2ffd0caa976
+2026-11-14 16:37:31,320 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "f8a76064-35de-4c87-9f3a-dcb19838a1b1", "operation": "divide", "a": 84, "b": 0}'
+2026-11-14 16:37:36,325 [CONSUMER] INFO: SUCCESS | 82 add 93 = 175 | message_id=dc977f8f-b4d9-4369-8fdc-8f1f4eec3629
+2026-11-14 16:37:41,321 [CONSUMER] INFO: SUCCESS | 92 add 8 = 100 | message_id=22db939b-6309-49a8-b2dc-aaa522da103f
+2026-11-14 16:37:46,321 [CONSUMER] INFO: SUCCESS | 5 add 49 = 54 | message_id=50607bd0-2e57-4136-8351-2c18e0df2224
+2026-11-14 16:37:51,323 [CONSUMER] INFO: SUCCESS | 95 multiply 15 = 1425 | message_id=e7d77357-59ee-454a-b482-e4b7a360cdf8
+2026-11-14 16:37:56,330 [CONSUMER] INFO: SUCCESS | 85 subtract 13 = 72 | message_id=13dd45ca-6574-4fc0-9a37-c89548bdb0d6
+2026-11-14 16:38:01,326 [CONSUMER] INFO: SUCCESS | 44 subtract 63 = -19 | message_id=c72c5a69-1fd7-4e28-be02-37daed898105
+2026-11-14 16:38:06,328 [CONSUMER] INFO: SUCCESS | 5 divide 65 = 0.07692307692307693 | message_id=0e07b059-88c3-420f-8a45-3c6f001fd84e
+2026-11-14 16:38:11,329 [CONSUMER] INFO: SUCCESS | 69 multiply 76 = 5244 | message_id=ee512e1d-eb64-457e-b477-65c1cb957295
+2026-11-14 16:38:16,330 [CONSUMER] INFO: SUCCESS | 4 add 45 = 49 | message_id=9476a623-f236-4dd2-8f28-b05d590d5786
+2026-11-14 16:38:21,332 [CONSUMER] INFO: SUCCESS | 25 multiply 31 = 775 | message_id=50fd86c8-9fd1-4aa6-823c-b2f707ccaa26
+2026-11-14 16:38:26,332 [CONSUMER] INFO: SUCCESS | 89 multiply 64 = 5696 | message_id=ac2545de-6879-4bda-b20b-118b049b63b4
+2026-11-14 16:38:31,332 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "f90ec286-5e40-4dec-9d01-07626c926063", "operation": "divide", "a": 36, "b": 0}'
+2026-11-14 16:38:36,335 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "b5652dce-1cf8-4a13-9a00-879ae7366163", "operation": "divide", "a": 63, "b": 0}'
+2026-11-14 16:38:41,335 [CONSUMER] INFO: SUCCESS | 42 add 61 = 103 | message_id=f631f945-88f8-40de-a9d0-54774d9c182c
+2026-11-14 16:38:46,337 [CONSUMER] INFO: SUCCESS | 55 subtract 100 = -45 | message_id=f0aac722-aa97-41e7-a9b9-eff25e71dcce
+2026-11-14 16:38:51,337 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "38a9038a-4dab-4918-a368-4a942a84bf17", "operation": "divide", "a": 62, "b": 0}'
+2026-11-14 16:38:56,339 [CONSUMER] INFO: SUCCESS | 15 subtract 17 = -2 | message_id=e9d7f71e-a2db-4021-a53b-4870820d72f9
+2026-11-14 16:39:01,341 [CONSUMER] INFO: SUCCESS | 84 multiply 39 = 3276 | message_id=d8ddb342-e474-4f19-bf31-ae9050f8701a
+2026-11-14 16:39:06,341 [CONSUMER] INFO: SUCCESS | 96 subtract 16 = 80 | message_id=32d4e1c8-ddc0-4b33-be6e-7a95b4e362a6
+2026-11-14 16:39:11,342 [CONSUMER] INFO: SUCCESS | 65 add 88 = 153 | message_id=bc65529f-f0d5-41f2-b5b6-112039999991
+2026-11-14 16:39:16,343 [CONSUMER] INFO: SUCCESS | 3 multiply 38 = 114 | message_id=eea163be-4668-49d1-bd78-f564d39dbbee
+2026-11-14 16:39:21,344 [CONSUMER] INFO: SUCCESS | 26 multiply 38 = 988 | message_id=df8a6ecc-08bc-4292-b389-ebbaf54c4406
+2026-11-14 16:39:26,345 [CONSUMER] INFO: SUCCESS | 9 subtract 13 = -4 | message_id=eea34a67-cd48-4fea-999b-f02f7fcc252b
+2026-11-14 16:39:31,345 [CONSUMER] INFO: SUCCESS | 17 multiply 34 = 578 | message_id=cb37ab8d-48f8-48d2-b6de-678536fe7c19
+2026-11-14 16:39:36,346 [CONSUMER] INFO: SUCCESS | 26 add 4 = 30 | message_id=84c13d76-f5b5-4d18-9b99-1277be197fe5
+2026-11-14 16:39:41,347 [CONSUMER] INFO: SUCCESS | 34 add 56 = 90 | message_id=45b6e4cd-6085-436a-8d3d-4a3ff73fc7fa
+2026-11-14 16:39:46,349 [CONSUMER] INFO: SUCCESS | 10 multiply 82 = 820 | message_id=04de4a88-c0dd-4a11-bd20-b735275d8cee
+2026-11-14 16:39:51,349 [CONSUMER] INFO: SUCCESS | 54 add 65 = 119 | message_id=7e6f75ef-531d-41ab-88b7-0e9bb6f1f59b
+2026-11-14 16:39:56,350 [CONSUMER] INFO: SUCCESS | 25 multiply 3 = 75 | message_id=9b02e039-fc42-498d-ad7e-64ae8e4bb69f
+2026-11-14 16:40:01,352 [CONSUMER] INFO: SUCCESS | 70 divide 35 = 2.0 | message_id=c8d0e655-2533-4638-9d90-68527f8c1ad4
+2026-11-14 16:40:06,354 [CONSUMER] INFO: SUCCESS | 52 subtract 22 = 30 | message_id=37db50ea-4d48-456b-ae55-dbf482b10cba
+2026-11-14 16:40:11,356 [CONSUMER] INFO: SUCCESS | 3 subtract 59 = -56 | message_id=b52290ed-4e5f-48e0-9b19-654175754680
+2026-11-14 16:40:16,359 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "aec2bb3b-9972-4fed-a4e9-a6ae2639ccdf", "operation": "divide", "a": 90, "b": 0}'
+2026-11-14 16:40:21,362 [CONSUMER] INFO: SUCCESS | 12 add 84 = 96 | message_id=2089591c-a618-437d-9962-55d84b158dfe
+2026-11-14 16:40:26,364 [CONSUMER] INFO: SUCCESS | 24 divide 85 = 0.2823529411764706 | message_id=252d7711-b14e-4c37-9b18-5b5d5aa606cf
+2026-11-14 16:40:31,365 [CONSUMER] INFO: SUCCESS | 25 multiply 50 = 1250 | message_id=87af806e-04c9-47d5-b56e-df2ca9950c71
+2026-11-14 16:40:36,366 [CONSUMER] INFO: SUCCESS | 37 subtract 71 = -34 | message_id=bc80e7df-30f2-47ce-8ae6-cf3d894fdcf5
+2026-11-14 16:40:41,366 [CONSUMER] INFO: SUCCESS | 30 add 51 = 81 | message_id=cb9f54ba-86e7-424a-a108-8786b462a422
+2026-11-14 16:40:46,368 [CONSUMER] INFO: SUCCESS | 24 subtract 19 = 5 | message_id=d5c04ae0-41d4-42b3-b1e7-05c8e75aecb0
+2026-11-14 16:40:51,368 [CONSUMER] INFO: SUCCESS | 67 add 84 = 151 | message_id=c556b1bd-e89d-4ebd-bd6d-682bb231652f
+2026-11-14 16:40:56,371 [CONSUMER] INFO: SUCCESS | 37 subtract 42 = -5 | message_id=30418b60-372b-4862-b55c-361e0ed0199c
+2026-11-14 16:41:01,372 [CONSUMER] ERROR: FAILED | Error: Division by zero | Message: b'{"id": "6312ce2b-72ae-4c41-8842-ef1aaa63e568", "operation": "divide", "a": 91, "b": 0}'
