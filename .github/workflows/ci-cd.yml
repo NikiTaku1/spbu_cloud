@@ -14,7 +14,7 @@ on:
     paths:
       - 'python-ci-cd/**'
       - '.github/workflows/ci-cd.yml'
-    workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
   contents: read
