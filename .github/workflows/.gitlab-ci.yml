@@ -1,0 +1,50 @@
+
+stages:
+  - check
+  - build
+
+variables:
+  DOCKER_IMAGE: "python-ci-cd"
+
+# Статический анализ кода
+lint:
+  stage: check
+  image: python:3.12
+  before_script:
+    - cd python-ci-cd
+    - pip install -r requirements-dev.txt
+  script:
+    - flake8 app tests --max-line-length=88
+
+# Автоматическое тестирование
+test:
+  stage: check
+  image: python:3.12
+  before_script:
+    - cd python-ci-cd
+    - pip install -r requirements-dev.txt
+  script:
+    - PYTHONPATH=. pytest -v
+
+# Сборка и публикация Docker-образа
+docker-build:
+  stage: build
+  image: docker:27-cli
+  services:
+    - name: docker:27-dind
+      alias: docker
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""
+  needs:
+    - lint
+    - test
+  before_script:
+    - echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+  script:
+    - docker build -t "$DOCKERHUB_USERNAME/$DOCKER_IMAGE:latest" ./python-ci-cd
+    - docker build -t "$DOCKERHUB_USERNAME/$DOCKER_IMAGE:$CI_COMMIT_SHA" ./python-ci-cd
+    - docker push "$DOCKERHUB_USERNAME/$DOCKER_IMAGE:latest"
+    - docker push "$DOCKERHUB_USERNAME/$DOCKER_IMAGE:$CI_COMMIT_SHA"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
